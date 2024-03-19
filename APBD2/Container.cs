@@ -17,7 +17,7 @@
             Height = height;
             Weight = weight;
             Depth = depth;
-            SerialNumber = serialNumber;
+            SerialNumber = name + Id;
             Capacity = capacity;
         }
 
@@ -26,7 +26,7 @@
             CargoWeight = 0;
         }
 
-        public void Load(double weight) 
+        public virtual void Load(double weight) 
         {
             if(weight + CargoWeight > Capacity) 
             {
