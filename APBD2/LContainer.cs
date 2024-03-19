@@ -3,10 +3,7 @@
     class LContainer : Container, IHazardNotifier
     {
         public LoadType LoadType { get; set; }
-        public LContainer(double cargoWeight, double height, double weight, double depth, string name, double capacity, LoadType loadType) : base(cargoWeight, height, weight, depth, name, capacity)
-        {
-
-        }
+        public LContainer(double cargoWeight, double height, double weight, double depth, string name, double capacity, LoadType loadType) : base(cargoWeight, height, weight, depth, name, capacity) { }
 
         public void NotifyHazard(string message)
         {

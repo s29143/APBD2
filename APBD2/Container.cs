@@ -21,7 +21,7 @@
             Capacity = capacity;
         }
 
-        public void EmptyLoading()
+        public virtual void EmptyLoading()
         {
             CargoWeight = 0;
         }
