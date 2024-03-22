@@ -33,5 +33,10 @@
             }
             CargoWeight += weight;
         }
+
+        public override string ToString()
+        {
+            return $"CargoWeight={CargoWeight}, SerialNumber={SerialNumber}, Capacity={Capacity}";
+        }
     }
 }
